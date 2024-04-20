@@ -56,3 +56,15 @@ GLIBC_PRIVATE
 $ sudo rpm -qa | grep glibc
 glibc-common-2.14.1-6.x86_64         ; changed from glibc-common-2.12-1.212.el6_10.3.x86_64
 glibc-2.14.1-6.x86_64                ; changed from glibc-2.12-1.212.el6_10.3.x86_64
+
+
+[yum mirror repo]
+$ sudo sed -i -e "s|mirrorlist=|#mirrorlist=|g" /etc/yum.repos.d/CentOS-*
+$ sudo sed -i -e "s|#baseurl=http://mirror.centos.org|baseurl=http://ftp.iij.ad.jp/pub/linux/centos-vault|g" /etc/yum.repos.d/CentOS-*;
+$ sudo yum update
+
+
+
+
+
+
