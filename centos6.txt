@@ -1,3 +1,7 @@
+#
+# Install GLIBC-2.14 on CENTOS6
+#
+
 [create centos6.9 vm]
 
 [wget]
